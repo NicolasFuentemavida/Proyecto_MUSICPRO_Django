@@ -1,0 +1,179 @@
+
+{% extends 'app/base.html' %}
+{% load static %} 
+
+{% block contenido %}
+<main>
+    <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 my-4 mx-auto text-center">
+        <h1 class="display-4 mt-4">Lista de Productos "Music Pro"</h1>
+        
+        <p class="lead">Selecciona uno de nuestros productos y accede a un descuento</p>
+    </div>
+
+    <div class="container" id="lista-productos">
+        
+        <div class="card-deck mb-3 text-center">
+            
+            <div class="card mb-4 shadow-sm">
+                <div class="card-header">
+                    <h4 class="my-0 font-weight-bold">Amplificador Stone</h4>
+                </div>
+                <div class="card-body">
+                    <img src="{% static 'app/dist/img/Amplificador.jpg' %}"class="card-img-top">
+                    <h1 class="card-title pricing-card-title precio"></h1>
+                    <ul class="list-unstyled mt-3 mb-4">
+                        <span class="">$150.000</span>
+                        <li>Amplificador</li>
+                        <li>Stone 500w</li>
+                    </ul>
+                    <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="1">Comprar</a>
+                </div>
+            </div>
+
+            <div class="card mb-4 shadow-sm">
+                <div class="card-header">
+                    <h4 class="my-0 font-weight-bold">Guitarra Electrica</h4>
+                </div>
+                <div class="card-body">
+                    <img src="{% static 'app/dist/img/GuitarraElectrica.jpg' %}"class="card-img-top">
+                    <h1 class="card-title pricing-card-title precio"> </h1>
+                    <ul class="list-unstyled mt-3 mb-4">
+                        <span class="">$150.000</span></h1>
+                        <li>Guitarra electrica</li>
+                        <li>ElviStone</li>
+                    </ul>
+                    <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="2">Comprar</a>
+                </div>
+            </div>
+
+            <div class="card mb-4 shadow-sm">
+                <div class="card-header">
+                    <h4 class="my-0 font-weight-bold">Saxofon</h4>
+                </div>
+                <div class="card-body">
+                    <img src="{% static 'app/dist/img/Saxofon.jpg'%}"  height="54%" class="card-img-top">
+                    <h1 class="card-title pricing-card-title precio"> </h1>
+                    <ul class="list-unstyled mt-3 mb-4">
+                        <span class="">$150.000</span></h1>
+                        <li>Saxofon Milk </li>
+                        <li>Milk</li>
+                    </ul>
+                    <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="2">Comprar</a>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="card-deck mb-3 text-center">
+
+            <div class="card mb-4 shadow-sm">
+                <div class="card-header">
+                    <h4 class="my-0 font-weight-bold">Guitarra Acustica</h4>
+                </div>
+                <div class="card-body">
+                    <img src="{% static 'app/dist/img/GuitarraAcustica.jpg' %}" height="215px" class="card-img-top">
+                    <h1 class="card-title pricing-card-title precio"> </h1>
+                    <ul class="list-unstyled mt-3 mb-4">
+                        <span class="">$100.000</span></h1>
+                        <li>Guitarra acustica 6 cuerdas</li>
+                        <li>Scorpion</li>
+                    </ul>
+                    <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="2">Comprar</a>
+                </div>
+            </div>
+
+            <div class="card mb-4 shadow-sm">
+                <div class="card-header">
+                    <h4 class="my-0 font-weight-bold">Bateria Scorpion</h4>
+                </div>
+                <div class="card-body">
+                    <img src="{% static 'app/dist/img/Bateria.jpg' %}" height="215px" class="card-img-top">
+                    <h1 class="card-title pricing-card-title precio"> </h1>
+                    <ul class="list-unstyled mt-3 mb-4">
+                        <span class="">$230.000</span></h1>
+                        <li>Bateria Escorpion 3 platos</li>
+                        <li>Scorpion</li>
+                    </ul>
+                    <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="2">Comprar</a>
+                </div>
+            </div>
+
+            <div class="card mb-4 shadow-sm">
+                <div class="card-header">
+                    <h4 class="my-0 font-weight-bold">Trompeta</h4>
+                </div>
+                <div class="card-body">
+                    <img src="{% static 'app/dist/img/Trompeta.jpg' %}" height="215px" class="card-img-top">
+                    <h1 class="card-title pricing-card-title precio"> </h1>
+                    <ul class="list-unstyled mt-3 mb-4">
+                        <span class="">$130.000</span></h1>
+                        <li>Trompeta Trump</li>
+                        <li>Trump</li>
+                    </ul>
+                    <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="2">Comprar</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="card-deck mb-3 text-center">
+            
+            <div class="card mb-4 shadow-sm">
+                <div class="card-header">
+                    <h4 class="my-0 font-weight-bold">Organo</h4>
+                </div>
+                <div class="card-body">
+                    <img src="{% static 'app/dist/img/Piano.jpg' %}" height="215px" class="card-img-top">
+                    <h1 class="card-title pricing-card-title precio"> </h1>
+                    <ul class="list-unstyled mt-3 mb-4">
+                        <span class="">$130.000</span></h1>
+                        <li>Organo Stone</li>
+                        <li>stone</li>
+                    </ul>
+                    <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="2">Comprar</a>
+                </div>
+            </div>
+
+            <div class="card mb-4 shadow-sm">
+                <div class="card-header">
+                    <h4 class="my-0 font-weight-bold">Pandero</h4>
+                </div>
+                <div class="card-body">
+                    <img src="{% static 'app/dist/img/Pandero.jpg' %}" height="215px" class="card-img-top">
+                    <h1 class="card-title pricing-card-title precio"> </h1>
+                    <ul class="list-unstyled mt-3 mb-4">
+                        <span class="">$30.000</span></h1>
+                        <li>Pandero Cuero</li>
+                        <li>Huemul</li>
+                    </ul>
+                    <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="2">Comprar</a>
+                </div>
+            </div>
+
+            <div class="card mb-4 shadow-sm">
+                <div class="card-header">
+                    <h4 class="my-0 font-weight-bold">Microfono Gamer</h4>
+                </div>
+                <div class="card-body">
+                    <img src="{% static 'app/dist/img/Microfono.jpg' %}" height="215px" class="card-img-top">
+                    <h1 class="card-title pricing-card-title precio"> </h1>
+                    <ul class="list-unstyled mt-3 mb-4">
+                        <span class="">$100.000</span></h1>
+                        <li>Microno Scorpion RGB</li>
+                        <li>Scorpion</li>
+                    </ul>
+                    <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="2">Comprar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>     
+
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/sweetalert2.min.js"></script>
+<script src="js/carrito.js"></script>
+<script src="js/pedido.js"></script>
+
+{% endblock %}
